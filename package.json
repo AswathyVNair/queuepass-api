@@ -1,0 +1,32 @@
+{
+  "name": "queuepass-api",
+  "version": "1.0.0",
+  "description": "QueuePass is a backend REST API designed for high-concurrency event ticketing. It prevents duplicate seat allocations during high-traffic sales drops using atomic database transactions and manages temporary seat holds with automated Redis expiration.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AswathyVNair/queuepass-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AswathyVNair/queuepass-api/issues"
+  },
+  "homepage": "https://github.com/AswathyVNair/queuepass-api#readme",
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
